@@ -1,0 +1,54 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="admindb" path="/shared/Mongo/admindb" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="0">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="alternateSecurityProperties" type="STRING">oauthaccesstoken</attribute>
+  <attribute name="authmechanism" type="STRING">NONE</attribute>
+  <attribute name="commitOnFetchDone" type="BOOLEAN">true</attribute>
+  <attribute name="connPoolMaxSize" type="INTEGER">100</attribute>
+  <attribute name="connPoolMinSize" type="INTEGER">0</attribute>
+  <attribute name="connPoolTimeout" type="INTEGER">30</attribute>
+  <attribute name="connStaleTimeout" type="INTEGER">60</attribute>
+  <attribute name="creationDate" type="LONG">1604916083918</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="database" type="STRING">admin</attribute>
+  <attribute name="driverName" type="STRING">MongoDB</attribute>
+  <attribute name="ds.conn_checkout_timeout" type="INTEGER">45</attribute>
+  <attribute name="execTimeout" type="INTEGER">0</attribute>
+  <attribute name="firewalltype" type="STRING">NONE</attribute>
+  <attribute name="flattenobjects" type="BOOLEAN">true</attribute>
+  <attribute name="generateschemafiles" type="STRING">Never</attribute>
+  <attribute name="isEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="isPassThrough" type="STRING">Disabled</attribute>
+  <attribute name="jdbcds.comparisons_case_insensitive" type="BOOLEAN">false</attribute>
+  <attribute name="jdbcds.ignore_case_sensitivity_mismatch" type="BOOLEAN">true</attribute>
+  <attribute name="jdbcds.ignore_trailing_spaces_mismatch" type="BOOLEAN">true</attribute>
+  <attribute name="jdbcds.no_support_query_timeout" type="BOOLEAN">true</attribute>
+  <attribute name="jdbcds.trailing_spaces_included_in_comparison" type="BOOLEAN">true</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1604916083918</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="location" type="STRING">%APPDATA%\CData\MongoDB Data Provider\Schema</attribute>
+  <attribute name="maxrows" type="STRING">-1</attribute>
+  <attribute name="name" type="STRING">admindb</attribute>
+  <attribute name="nocursortimeout" type="BOOLEAN">false</attribute>
+  <attribute name="persistPassword" type="BOOLEAN">true</attribute>
+  <attribute name="port" type="STRING">27017</attribute>
+  <attribute name="querypassthrough" type="BOOLEAN">false</attribute>
+  <attribute name="readonly" type="BOOLEAN">false</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1604916083918</attribute>
+  <attribute name="rowscandepth" type="STRING">100</attribute>
+  <attribute name="server" type="STRING">localhost</attribute>
+  <attribute name="slaveok" type="BOOLEAN">false</attribute>
+  <attribute name="sslclientcertsubject" type="STRING">*</attribute>
+  <attribute name="timeout" type="STRING">60</attribute>
+  <attribute name="txnIsolationLevel" type="STRING">Read Committed</attribute>
+  <attribute name="type" type="STRING">cloud_nosql</attribute>
+  <attribute name="typedetectionscheme" type="STRING">RowScan</attribute>
+  <attribute name="usessl" type="BOOLEAN">false</attribute>
+</metadata>

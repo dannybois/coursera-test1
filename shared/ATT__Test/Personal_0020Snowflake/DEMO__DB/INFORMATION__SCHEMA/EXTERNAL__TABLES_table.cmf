@@ -1,0 +1,111 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="EXTERNAL_TABLES" path="/shared/ATT_Test/Personal Snowflake/DEMO_DB/INFORMATION_SCHEMA/EXTERNAL_TABLES" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="VIEW">
+  <annotation>&lt;![CDATA[The external tables defined in this database that are accessible to the current user&amp;apos;s role.]]&gt;</annotation>
+  <columns>
+    <column name="TABLE_CATALOG" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Database that the external table belongs to]]&gt;</annotation>
+    </column>
+    <column name="TABLE_SCHEMA" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Schema that the external table belongs to]]&gt;</annotation>
+    </column>
+    <column name="TABLE_NAME" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Name of the external table]]&gt;</annotation>
+    </column>
+    <column name="TABLE_OWNER" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Name of the role that owns the external table]]&gt;</annotation>
+    </column>
+    <column name="CREATED" nullable="true">
+      <datatype name="TIMESTAMP" extendedName="TIMESTAMP" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Creation time of the external table]]&gt;</annotation>
+    </column>
+    <column name="LAST_ALTERED" nullable="true">
+      <datatype name="TIMESTAMP" extendedName="TIMESTAMP" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Last altered time of the external table]]&gt;</annotation>
+    </column>
+    <column name="COMMENT" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Comment for this external table]]&gt;</annotation>
+    </column>
+    <column name="LOCATION" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Location of the external table]]&gt;</annotation>
+    </column>
+    <column name="FILE_FORMAT_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[File format name (if there is one) of the external table]]&gt;</annotation>
+    </column>
+    <column name="FILE_FORMAT_TYPE" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[File format type (if not named) of the external table]]&gt;</annotation>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="c:0:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:1:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:2:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:3:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:4:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:5:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:6:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:7:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:8:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:9:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="creationDate" type="LONG">1616689297456</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1616689297456</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1616689297456</attribute>
+</metadata>

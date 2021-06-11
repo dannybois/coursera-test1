@@ -1,0 +1,120 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="SnowflakeDB" path="/shared/ATT_Test/SnowflakeDB" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="0">
+  <security>
+    <owner user="admin" domain="composite"/>
+    <privilege user="anonymous" domain="composite" privileges="READ"/>
+    <privilege group="all" domain="composite" privileges="READ WRITE"/>
+    <privilege group="all" domain="dynamic" privileges="READ"/>
+  </security>
+  <attribute name="OAuthConfig" type="NULL"/>
+  <attribute name="account" type="STRING"/>
+  <attribute name="adapterurl" type="STRING">https://tibco_partner.snowflakecomputing.com</attribute>
+  <attribute name="alternateSecurityProperties" type="STRING">oauthaccesstoken</attribute>
+  <attribute name="anyCharWildcard" type="STRING">%</attribute>
+  <attribute name="asyncquerytimeout" type="INTEGER">300</attribute>
+  <attribute name="authscheme" type="STRING">Password</attribute>
+  <attribute name="autoAddChildren" type="BOOLEAN">false</attribute>
+  <attribute name="azuretenant" type="STRING"/>
+  <attribute name="cacheStatusAndTrackingDS" type="STRING"/>
+  <attribute name="cacheStatusTable" type="STRING"/>
+  <attribute name="cacheTrackingTable" type="STRING"/>
+  <attribute name="commitOnFetchDone" type="BOOLEAN">true</attribute>
+  <attribute name="connCheckOutProcedure" type="STRING"/>
+  <attribute name="connPoolMaxSize" type="INTEGER">100</attribute>
+  <attribute name="connPoolMinSize" type="INTEGER">0</attribute>
+  <attribute name="connPoolTimeout" type="INTEGER">30</attribute>
+  <attribute name="connStaleTimeout" type="INTEGER">60</attribute>
+  <attribute name="connValidateQuery" type="STRING"/>
+  <attribute name="creationDate" type="LONG">1616679047631</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="credentialslocation" type="STRING">%APPDATA%\CData\Snowflake Data Provider\CredentialsFile.txt</attribute>
+  <attribute name="customstage" type="STRING"/>
+  <attribute name="database" type="STRING">TEST_DB</attribute>
+  <attribute name="driverName" type="STRING">Snowflake</attribute>
+  <attribute name="ds.conn_checkout_timeout" type="INTEGER">45</attribute>
+  <attribute name="execTimeout" type="INTEGER">0</attribute>
+  <attribute name="firewallport" type="NULL"/>
+  <attribute name="firewallserver" type="STRING"/>
+  <attribute name="firewalltype" type="STRING">NONE</attribute>
+  <attribute name="firewalluser" type="STRING"/>
+  <attribute name="ignorecase" type="BOOLEAN">false</attribute>
+  <attribute name="includetabletypes" type="BOOLEAN">false</attribute>
+  <attribute name="initiateoauth" type="STRING">OFF</attribute>
+  <attribute name="isEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="isPassThrough" type="STRING">Disabled</attribute>
+  <attribute name="jdbcds.comparisons_case_insensitive" type="BOOLEAN">false</attribute>
+  <attribute name="jdbcds.ignore_case_sensitivity_mismatch" type="BOOLEAN">true</attribute>
+  <attribute name="jdbcds.ignore_trailing_spaces_mismatch" type="BOOLEAN">true</attribute>
+  <attribute name="jdbcds.no_support_query_timeout" type="BOOLEAN">true</attribute>
+  <attribute name="jdbcds.trailing_spaces_included_in_comparison" type="BOOLEAN">true</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1622704384593</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="location" type="STRING">%APPDATA%\CData\Snowflake Data Provider\Schema</attribute>
+  <attribute name="logmodules" type="STRING"/>
+  <attribute name="maxrows" type="INTEGER">-1</attribute>
+  <attribute name="mergedelete" type="BOOLEAN">false</attribute>
+  <attribute name="mergeinsert" type="BOOLEAN">false</attribute>
+  <attribute name="mergeupdate" type="BOOLEAN">false</attribute>
+  <attribute name="mfapasscode" type="STRING">ENC(+YTZgQsyq6NtC9259lS/bg==$jkM1yAcRr+QNn5Zl9fszkQ==)</attribute>
+  <attribute name="name" type="STRING">SnowflakeDB</attribute>
+  <attribute name="oauthaccesstokenurl" type="STRING"/>
+  <attribute name="oauthauthenticator" type="STRING">None</attribute>
+  <attribute name="oauthauthorizationurl" type="STRING"/>
+  <attribute name="oauthclientid" type="STRING"/>
+  <attribute name="oauthexpiresin" type="STRING"/>
+  <attribute name="oauthsettingslocation" type="STRING">%APPDATA%\CData\Snowflake Data Provider\OAuthSettings.txt</attribute>
+  <attribute name="oauthtokentimestamp" type="STRING"/>
+  <attribute name="oktamfaprovider" type="STRING">OKTA</attribute>
+  <attribute name="other" type="STRING">querypassthrough=true;</attribute>
+  <attribute name="overrides" type="STRING">!!com.compositesw.common.ds.config.schema.OverridesContainer
+clause_support: {}
+function_support: {}
+operator_support: {}
+schema_version: 1
+simple_properties:
+  jdbcds.support_ddl.create_table: {allowable_values: null, display_in_ui: f, display_name: Supports CREATE TABLE,
+    value: true, value_overridable_by_datasource: t, value_required_for_adapter: f,
+    value_required_for_datasource: f, value_type: BOOLEAN}
+type_mappings: null
+</attribute>
+  <attribute name="pagesize" type="INTEGER">5000</attribute>
+  <attribute name="parallellevel" type="INTEGER">0</attribute>
+  <attribute name="password" type="PASSWORD_STRING">ENC(bvUKEPe5ZjOl/Sp3CMWygg==$i451Bueb3kzuK4uu5yiOpw==)</attribute>
+  <attribute name="patternSeparator" type="STRING">,</attribute>
+  <attribute name="persistPassword" type="BOOLEAN">true</attribute>
+  <attribute name="privatekeytype" type="STRING">USER</attribute>
+  <attribute name="proxyauthscheme" type="STRING">BASIC</attribute>
+  <attribute name="proxyautodetect" type="BOOLEAN">true</attribute>
+  <attribute name="proxyexceptions" type="STRING"/>
+  <attribute name="proxyport" type="INTEGER">80</attribute>
+  <attribute name="proxyserver" type="STRING"/>
+  <attribute name="proxyssltype" type="STRING">AUTO</attribute>
+  <attribute name="proxyuser" type="STRING"/>
+  <attribute name="querypassthrough" type="BOOLEAN">false</attribute>
+  <attribute name="readonly" type="BOOLEAN">false</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1616679047631</attribute>
+  <attribute name="rolename" type="STRING"/>
+  <attribute name="schema" type="STRING">TEST</attribute>
+  <attribute name="scope" type="STRING"/>
+  <attribute name="searchCaseSensitively" type="BOOLEAN">false</attribute>
+  <attribute name="searchEscape" type="STRING">\</attribute>
+  <attribute name="selectionState" type="INTEGER">1</attribute>
+  <attribute name="sessionparameters" type="STRING"/>
+  <attribute name="singleCharWildcard" type="STRING">_</attribute>
+  <attribute name="sslservercert" type="STRING"/>
+  <attribute name="ssoidp" type="STRING"/>
+  <attribute name="ssoidpdomain" type="STRING"/>
+  <attribute name="supportenhancedsql" type="BOOLEAN">false</attribute>
+  <attribute name="timeout" type="INTEGER">120</attribute>
+  <attribute name="txnIsolationLevel" type="STRING">Read Committed</attribute>
+  <attribute name="type" type="STRING">cloud_nosql</attribute>
+  <attribute name="url" type="STRING">Snowflake</attribute>
+  <attribute name="useasyncquery" type="BOOLEAN">false</attribute>
+  <attribute name="user" type="STRING">TDVQA1</attribute>
+  <attribute name="warehouse" type="STRING">TDV_WAREHOUSE1</attribute>
+</metadata>

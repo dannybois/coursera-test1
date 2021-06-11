@@ -1,0 +1,219 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="TABLES" path="/shared/ATT_Test/Personal Snowflake/TEST/INFORMATION_SCHEMA/TABLES" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="VIEW">
+  <annotation>&lt;![CDATA[The tables defined in this database that are accessible to the current user&amp;apos;s role.]]&gt;</annotation>
+  <columns>
+    <column name="TABLE_CATALOG" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Database that the table belongs to]]&gt;</annotation>
+    </column>
+    <column name="TABLE_SCHEMA" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Schema that the table belongs to]]&gt;</annotation>
+    </column>
+    <column name="TABLE_NAME" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Name of the table]]&gt;</annotation>
+    </column>
+    <column name="TABLE_OWNER" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Name of the role that owns the table]]&gt;</annotation>
+    </column>
+    <column name="TABLE_TYPE" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Whether the table is a base table, temporary table, or view]]&gt;</annotation>
+    </column>
+    <column name="IS_TRANSIENT" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(3)" subType="DATASOURCE_TYPE" type="STRING" maxLength="3"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Whether this is a transient table]]&gt;</annotation>
+    </column>
+    <column name="CLUSTERING_KEY" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Clustering key for the table]]&gt;</annotation>
+    </column>
+    <column name="ROW_COUNT" nullable="true">
+      <datatype name="DECIMAL" extendedName="DECIMAL(38,0)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="38" maxFractionalDigits="0"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Number of rows in the table]]&gt;</annotation>
+    </column>
+    <column name="BYTES" nullable="true">
+      <datatype name="DECIMAL" extendedName="DECIMAL(38,0)" subType="DATASOURCE_TYPE" type="DECIMAL" maxDigits="38" maxFractionalDigits="0"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Number of bytes accessed by a scan of the table]]&gt;</annotation>
+    </column>
+    <column name="RETENTION_TIME" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Number of days that historical data is retained for Time Travel]]&gt;</annotation>
+    </column>
+    <column name="SELF_REFERENCING_COLUMN_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="REFERENCE_GENERATION" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="USER_DEFINED_TYPE_CATALOG" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="USER_DEFINED_TYPE_SCHEMA" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="USER_DEFINED_TYPE_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="IS_INSERTABLE_INTO" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(3)" subType="DATASOURCE_TYPE" type="STRING" maxLength="3"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="IS_TYPED" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(3)" subType="DATASOURCE_TYPE" type="STRING" maxLength="3"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="COMMIT_ACTION" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Not applicable for Snowflake.]]&gt;</annotation>
+    </column>
+    <column name="CREATED" nullable="true">
+      <datatype name="TIMESTAMP" extendedName="TIMESTAMP" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Creation time of the function]]&gt;</annotation>
+    </column>
+    <column name="LAST_ALTERED" nullable="true">
+      <datatype name="TIMESTAMP" extendedName="TIMESTAMP" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Last altered time of the function]]&gt;</annotation>
+    </column>
+    <column name="AUTO_CLUSTERING_ON" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(3)" subType="DATASOURCE_TYPE" type="STRING" maxLength="3"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Whether automatic clustering is on for the table]]&gt;</annotation>
+    </column>
+    <column name="COMMENT" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Comment for this table]]&gt;</annotation>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="c:0:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:10:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:11:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:12:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:13:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:14:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:15:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:16:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:17:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:18:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:19:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:1:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:20:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:21:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:2:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:3:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:4:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:5:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:6:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:7:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:8:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:9:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="creationDate" type="LONG">1616689274979</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1616689274979</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1616689274979</attribute>
+</metadata>

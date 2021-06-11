@@ -1,0 +1,232 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="Definitions" path="/shared/wsdl/new_wsd/Definitions" type="DEFINITION_SET" subtype="WSDL_DEFINITION_SET" changeToken="0">
+  <definitions>
+    <definition name="{https://www.w3schools.com/xml/}CelsiusToFahrenheit" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{https://www.w3schools.com/xml/}CelsiusToFahrenheitResponse" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{https://www.w3schools.com/xml/}FahrenheitToCelsius" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{https://www.w3schools.com/xml/}FahrenheitToCelsiusResponse" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+    <definition name="{https://www.w3schools.com/xml/}string" type="ELEMENT">
+      <attribute name="creationDate" type="LONG">0</attribute>
+      <attribute name="creatorUserDomain" type="STRING"/>
+      <attribute name="creatorUserId" type="INTEGER">0</attribute>
+      <attribute name="creatorUserName" type="STRING"/>
+      <attribute name="lastModifiedDate" type="LONG">0</attribute>
+      <attribute name="lastModifiedUserDomain" type="STRING"/>
+      <attribute name="lastModifiedUserId" type="INTEGER">0</attribute>
+      <attribute name="lastModifiedUserName" type="STRING"/>
+      <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">0</attribute>
+    </definition>
+  </definitions>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1615303396378</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">true</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1615303396378</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1615303396378</attribute>
+  <attribute name="selectionState" type="INTEGER">1</attribute>
+  <attribute name="sourceText" type="STRING">&lt;wsdl:definitions xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:tm=&quot;http://microsoft.com/wsdl/mime/textMatching/&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:mime=&quot;http://schemas.xmlsoap.org/wsdl/mime/&quot; xmlns:tns=&quot;https://www.w3schools.com/xml/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:s=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap12=&quot;http://schemas.xmlsoap.org/wsdl/soap12/&quot; xmlns:http=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot; targetNamespace=&quot;https://www.w3schools.com/xml/&quot;&gt;
+  &lt;wsdl:types&gt;
+    &lt;s:schema elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;https://www.w3schools.com/xml/&quot;&gt;
+      &lt;s:element name=&quot;FahrenheitToCelsius&quot;&gt;
+        &lt;s:complexType&gt;
+          &lt;s:sequence&gt;
+            &lt;s:element minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot; name=&quot;Fahrenheit&quot; type=&quot;s:string&quot;/&gt;
+          &lt;/s:sequence&gt;
+        &lt;/s:complexType&gt;
+      &lt;/s:element&gt;
+      &lt;s:element name=&quot;FahrenheitToCelsiusResponse&quot;&gt;
+        &lt;s:complexType&gt;
+          &lt;s:sequence&gt;
+            &lt;s:element minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot; name=&quot;FahrenheitToCelsiusResult&quot; type=&quot;s:string&quot;/&gt;
+          &lt;/s:sequence&gt;
+        &lt;/s:complexType&gt;
+      &lt;/s:element&gt;
+      &lt;s:element name=&quot;CelsiusToFahrenheit&quot;&gt;
+        &lt;s:complexType&gt;
+          &lt;s:sequence&gt;
+            &lt;s:element minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot; name=&quot;Celsius&quot; type=&quot;s:string&quot;/&gt;
+          &lt;/s:sequence&gt;
+        &lt;/s:complexType&gt;
+      &lt;/s:element&gt;
+      &lt;s:element name=&quot;CelsiusToFahrenheitResponse&quot;&gt;
+        &lt;s:complexType&gt;
+          &lt;s:sequence&gt;
+            &lt;s:element minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot; name=&quot;CelsiusToFahrenheitResult&quot; type=&quot;s:string&quot;/&gt;
+          &lt;/s:sequence&gt;
+        &lt;/s:complexType&gt;
+      &lt;/s:element&gt;
+      &lt;s:element name=&quot;string&quot; nillable=&quot;true&quot; type=&quot;s:string&quot;/&gt;
+    &lt;/s:schema&gt;
+  &lt;/wsdl:types&gt;
+  &lt;wsdl:message name=&quot;FahrenheitToCelsiusSoapIn&quot;&gt;
+    &lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:FahrenheitToCelsius&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;FahrenheitToCelsiusSoapOut&quot;&gt;
+    &lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:FahrenheitToCelsiusResponse&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;CelsiusToFahrenheitSoapIn&quot;&gt;
+    &lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:CelsiusToFahrenheit&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;CelsiusToFahrenheitSoapOut&quot;&gt;
+    &lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:CelsiusToFahrenheitResponse&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;FahrenheitToCelsiusHttpPostIn&quot;&gt;
+    &lt;wsdl:part name=&quot;Fahrenheit&quot; type=&quot;s:string&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;FahrenheitToCelsiusHttpPostOut&quot;&gt;
+    &lt;wsdl:part name=&quot;Body&quot; element=&quot;tns:string&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;CelsiusToFahrenheitHttpPostIn&quot;&gt;
+    &lt;wsdl:part name=&quot;Celsius&quot; type=&quot;s:string&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;CelsiusToFahrenheitHttpPostOut&quot;&gt;
+    &lt;wsdl:part name=&quot;Body&quot; element=&quot;tns:string&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:portType name=&quot;TempConvertSoap&quot;&gt;
+    &lt;wsdl:operation name=&quot;FahrenheitToCelsius&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:FahrenheitToCelsiusSoapIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:FahrenheitToCelsiusSoapOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;CelsiusToFahrenheit&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:CelsiusToFahrenheitSoapIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:CelsiusToFahrenheitSoapOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:portType name=&quot;TempConvertHttpPost&quot;&gt;
+    &lt;wsdl:operation name=&quot;FahrenheitToCelsius&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:FahrenheitToCelsiusHttpPostIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:FahrenheitToCelsiusHttpPostOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;CelsiusToFahrenheit&quot;&gt;
+      &lt;wsdl:input message=&quot;tns:CelsiusToFahrenheitHttpPostIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:CelsiusToFahrenheitHttpPostOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:binding name=&quot;TempConvertSoap&quot; type=&quot;tns:TempConvertSoap&quot;&gt;
+    &lt;soap:binding transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt;
+    &lt;wsdl:operation name=&quot;FahrenheitToCelsius&quot;&gt;
+      &lt;soap:operation soapAction=&quot;https://www.w3schools.com/xml/FahrenheitToCelsius&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;CelsiusToFahrenheit&quot;&gt;
+      &lt;soap:operation soapAction=&quot;https://www.w3schools.com/xml/CelsiusToFahrenheit&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:binding name=&quot;TempConvertSoap12&quot; type=&quot;tns:TempConvertSoap&quot;&gt;
+    &lt;soap12:binding transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt;
+    &lt;wsdl:operation name=&quot;FahrenheitToCelsius&quot;&gt;
+      &lt;soap12:operation soapAction=&quot;https://www.w3schools.com/xml/FahrenheitToCelsius&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap12:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap12:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;CelsiusToFahrenheit&quot;&gt;
+      &lt;soap12:operation soapAction=&quot;https://www.w3schools.com/xml/CelsiusToFahrenheit&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap12:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap12:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:binding name=&quot;TempConvertHttpPost&quot; type=&quot;tns:TempConvertHttpPost&quot;&gt;
+    &lt;http:binding verb=&quot;POST&quot;/&gt;
+    &lt;wsdl:operation name=&quot;FahrenheitToCelsius&quot;&gt;
+      &lt;http:operation location=&quot;/FahrenheitToCelsius&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;mime:content type=&quot;application/x-www-form-urlencoded&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;mime:mimeXml part=&quot;Body&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+    &lt;wsdl:operation name=&quot;CelsiusToFahrenheit&quot;&gt;
+      &lt;http:operation location=&quot;/CelsiusToFahrenheit&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;mime:content type=&quot;application/x-www-form-urlencoded&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;mime:mimeXml part=&quot;Body&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:service name=&quot;TempConvert&quot;&gt;
+    &lt;wsdl:port name=&quot;TempConvertSoap&quot; binding=&quot;tns:TempConvertSoap&quot;&gt;
+      &lt;soap:address location=&quot;http://www.w3schools.com/xml/tempconvert.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+    &lt;wsdl:port name=&quot;TempConvertSoap12&quot; binding=&quot;tns:TempConvertSoap12&quot;&gt;
+      &lt;soap12:address location=&quot;http://www.w3schools.com/xml/tempconvert.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+    &lt;wsdl:port name=&quot;TempConvertHttpPost&quot; binding=&quot;tns:TempConvertHttpPost&quot;&gt;
+      &lt;http:address location=&quot;http://www.w3schools.com/xml/tempconvert.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+  &lt;/wsdl:service&gt;
+&lt;/wsdl:definitions&gt;
+</attribute>
+  <attribute name="sources" type="LIST">
+    <list type="OBJECT">rO0ABXNyADVjb20uY29tcG9zaXRlc3cuY29tbW9uLnJlcG9zaXRvcnkuRGVmaW5pdGlvblNldFNvdXJjZVYpv6Zr2hqJAgACTAAIbG9jYXRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAApzb3VyY2VUZXh0cQB+AAF4cHQAEHRlbXBjb252ZXJ0LmFzbXh0G+Y8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/Pg0KPHdzZGw6ZGVmaW5pdGlvbnMgdGFyZ2V0TmFtZXNwYWNlPSJodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3htbC8iIHhtbG5zOnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp3c2RsPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93c2RsLyIgeG1sbnM6bWltZT0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3NkbC9taW1lLyIgeG1sbnM6dG5zPSJodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3htbC8iIHhtbG5zOmh0dHA9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzZGwvaHR0cC8iIHhtbG5zOnRtPSJodHRwOi8vbWljcm9zb2Z0LmNvbS93c2RsL21pbWUvdGV4dE1hdGNoaW5nLyIgeG1sbnM6c29hcDEyPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93c2RsL3NvYXAxMi8iIHhtbG5zOnNvYXA9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzZGwvc29hcC8iIHhtbG5zOnNvYXBlbmM9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW5jb2RpbmcvIj4NCiAgPHdzZGw6dHlwZXM+DQogICAgPHM6c2NoZW1hIGVsZW1lbnRGb3JtRGVmYXVsdD0icXVhbGlmaWVkIiB0YXJnZXROYW1lc3BhY2U9Imh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sLyI+DQogICAgICA8czplbGVtZW50IG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXMiPg0KICAgICAgICA8czpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDxzOmVsZW1lbnQgbWF4T2NjdXJzPSIxIiBtaW5PY2N1cnM9IjAiIG5hbWU9IkZhaHJlbmhlaXQiIHR5cGU9InM6c3RyaW5nIi8+DQogICAgICAgICAgPC9zOnNlcXVlbmNlPg0KICAgICAgICA8L3M6Y29tcGxleFR5cGU+DQogICAgICA8L3M6ZWxlbWVudD4NCiAgICAgIDxzOmVsZW1lbnQgbmFtZT0iRmFocmVuaGVpdFRvQ2Vsc2l1c1Jlc3BvbnNlIj4NCiAgICAgICAgPHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgPHM6c2VxdWVuY2U+DQogICAgICAgICAgICA8czplbGVtZW50IG1heE9jY3Vycz0iMSIgbWluT2NjdXJzPSIwIiBuYW1lPSJGYWhyZW5oZWl0VG9DZWxzaXVzUmVzdWx0IiB0eXBlPSJzOnN0cmluZyIvPg0KICAgICAgICAgIDwvczpzZXF1ZW5jZT4NCiAgICAgICAgPC9zOmNvbXBsZXhUeXBlPg0KICAgICAgPC9zOmVsZW1lbnQ+DQogICAgICA8czplbGVtZW50IG5hbWU9IkNlbHNpdXNUb0ZhaHJlbmhlaXQiPg0KICAgICAgICA8czpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDxzOmVsZW1lbnQgbWF4T2NjdXJzPSIxIiBtaW5PY2N1cnM9IjAiIG5hbWU9IkNlbHNpdXMiIHR5cGU9InM6c3RyaW5nIi8+DQogICAgICAgICAgPC9zOnNlcXVlbmNlPg0KICAgICAgICA8L3M6Y29tcGxleFR5cGU+DQogICAgICA8L3M6ZWxlbWVudD4NCiAgICAgIDxzOmVsZW1lbnQgbmFtZT0iQ2Vsc2l1c1RvRmFocmVuaGVpdFJlc3BvbnNlIj4NCiAgICAgICAgPHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgPHM6c2VxdWVuY2U+DQogICAgICAgICAgICA8czplbGVtZW50IG1heE9jY3Vycz0iMSIgbWluT2NjdXJzPSIwIiBuYW1lPSJDZWxzaXVzVG9GYWhyZW5oZWl0UmVzdWx0IiB0eXBlPSJzOnN0cmluZyIvPg0KICAgICAgICAgIDwvczpzZXF1ZW5jZT4NCiAgICAgICAgPC9zOmNvbXBsZXhUeXBlPg0KICAgICAgPC9zOmVsZW1lbnQ+DQogICAgICA8czplbGVtZW50IG5hbWU9InN0cmluZyIgbmlsbGFibGU9InRydWUiIHR5cGU9InM6c3RyaW5nIi8+DQogICAgPC9zOnNjaGVtYT4NCiAgPC93c2RsOnR5cGVzPg0KICA8d3NkbDptZXNzYWdlIG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXNTb2FwSW4iPg0KICAgIDx3c2RsOnBhcnQgbmFtZT0icGFyYW1ldGVycyIgZWxlbWVudD0idG5zOkZhaHJlbmhlaXRUb0NlbHNpdXMiPg0KICAgIDwvd3NkbDpwYXJ0Pg0KICA8L3dzZGw6bWVzc2FnZT4NCiAgPHdzZGw6bWVzc2FnZSBuYW1lPSJGYWhyZW5oZWl0VG9DZWxzaXVzSHR0cFBvc3RPdXQiPg0KICAgIDx3c2RsOnBhcnQgbmFtZT0iQm9keSIgZWxlbWVudD0idG5zOnN0cmluZyI+DQogICAgPC93c2RsOnBhcnQ+DQogIDwvd3NkbDptZXNzYWdlPg0KICA8d3NkbDptZXNzYWdlIG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXNIdHRwUG9zdEluIj4NCiAgICA8d3NkbDpwYXJ0IG5hbWU9IkZhaHJlbmhlaXQiIHR5cGU9InM6c3RyaW5nIj4NCiAgICA8L3dzZGw6cGFydD4NCiAgPC93c2RsOm1lc3NhZ2U+DQogIDx3c2RsOm1lc3NhZ2UgbmFtZT0iQ2Vsc2l1c1RvRmFocmVuaGVpdFNvYXBPdXQiPg0KICAgIDx3c2RsOnBhcnQgbmFtZT0icGFyYW1ldGVycyIgZWxlbWVudD0idG5zOkNlbHNpdXNUb0ZhaHJlbmhlaXRSZXNwb25zZSI+DQogICAgPC93c2RsOnBhcnQ+DQogIDwvd3NkbDptZXNzYWdlPg0KICA8d3NkbDptZXNzYWdlIG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXNTb2FwT3V0Ij4NCiAgICA8d3NkbDpwYXJ0IG5hbWU9InBhcmFtZXRlcnMiIGVsZW1lbnQ9InRuczpGYWhyZW5oZWl0VG9DZWxzaXVzUmVzcG9uc2UiPg0KICAgIDwvd3NkbDpwYXJ0Pg0KICA8L3dzZGw6bWVzc2FnZT4NCiAgPHdzZGw6bWVzc2FnZSBuYW1lPSJDZWxzaXVzVG9GYWhyZW5oZWl0SHR0cFBvc3RJbiI+DQogICAgPHdzZGw6cGFydCBuYW1lPSJDZWxzaXVzIiB0eXBlPSJzOnN0cmluZyI+DQogICAgPC93c2RsOnBhcnQ+DQogIDwvd3NkbDptZXNzYWdlPg0KICA8d3NkbDptZXNzYWdlIG5hbWU9IkNlbHNpdXNUb0ZhaHJlbmhlaXRIdHRwUG9zdE91dCI+DQogICAgPHdzZGw6cGFydCBuYW1lPSJCb2R5IiBlbGVtZW50PSJ0bnM6c3RyaW5nIj4NCiAgICA8L3dzZGw6cGFydD4NCiAgPC93c2RsOm1lc3NhZ2U+DQogIDx3c2RsOm1lc3NhZ2UgbmFtZT0iQ2Vsc2l1c1RvRmFocmVuaGVpdFNvYXBJbiI+DQogICAgPHdzZGw6cGFydCBuYW1lPSJwYXJhbWV0ZXJzIiBlbGVtZW50PSJ0bnM6Q2Vsc2l1c1RvRmFocmVuaGVpdCI+DQogICAgPC93c2RsOnBhcnQ+DQogIDwvd3NkbDptZXNzYWdlPg0KICA8d3NkbDpwb3J0VHlwZSBuYW1lPSJUZW1wQ29udmVydEh0dHBQb3N0Ij4NCiAgICA8d3NkbDpvcGVyYXRpb24gbmFtZT0iRmFocmVuaGVpdFRvQ2Vsc2l1cyI+DQogICAgICA8d3NkbDppbnB1dCBtZXNzYWdlPSJ0bnM6RmFocmVuaGVpdFRvQ2Vsc2l1c0h0dHBQb3N0SW4iPg0KICAgIDwvd3NkbDppbnB1dD4NCiAgICAgIDx3c2RsOm91dHB1dCBtZXNzYWdlPSJ0bnM6RmFocmVuaGVpdFRvQ2Vsc2l1c0h0dHBQb3N0T3V0Ij4NCiAgICA8L3dzZGw6b3V0cHV0Pg0KICAgIDwvd3NkbDpvcGVyYXRpb24+DQogICAgPHdzZGw6b3BlcmF0aW9uIG5hbWU9IkNlbHNpdXNUb0ZhaHJlbmhlaXQiPg0KICAgICAgPHdzZGw6aW5wdXQgbWVzc2FnZT0idG5zOkNlbHNpdXNUb0ZhaHJlbmhlaXRIdHRwUG9zdEluIj4NCiAgICA8L3dzZGw6aW5wdXQ+DQogICAgICA8d3NkbDpvdXRwdXQgbWVzc2FnZT0idG5zOkNlbHNpdXNUb0ZhaHJlbmhlaXRIdHRwUG9zdE91dCI+DQogICAgPC93c2RsOm91dHB1dD4NCiAgICA8L3dzZGw6b3BlcmF0aW9uPg0KICA8L3dzZGw6cG9ydFR5cGU+DQogIDx3c2RsOnBvcnRUeXBlIG5hbWU9IlRlbXBDb252ZXJ0U29hcCI+DQogICAgPHdzZGw6b3BlcmF0aW9uIG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXMiPg0KICAgICAgPHdzZGw6aW5wdXQgbWVzc2FnZT0idG5zOkZhaHJlbmhlaXRUb0NlbHNpdXNTb2FwSW4iPg0KICAgIDwvd3NkbDppbnB1dD4NCiAgICAgIDx3c2RsOm91dHB1dCBtZXNzYWdlPSJ0bnM6RmFocmVuaGVpdFRvQ2Vsc2l1c1NvYXBPdXQiPg0KICAgIDwvd3NkbDpvdXRwdXQ+DQogICAgPC93c2RsOm9wZXJhdGlvbj4NCiAgICA8d3NkbDpvcGVyYXRpb24gbmFtZT0iQ2Vsc2l1c1RvRmFocmVuaGVpdCI+DQogICAgICA8d3NkbDppbnB1dCBtZXNzYWdlPSJ0bnM6Q2Vsc2l1c1RvRmFocmVuaGVpdFNvYXBJbiI+DQogICAgPC93c2RsOmlucHV0Pg0KICAgICAgPHdzZGw6b3V0cHV0IG1lc3NhZ2U9InRuczpDZWxzaXVzVG9GYWhyZW5oZWl0U29hcE91dCI+DQogICAgPC93c2RsOm91dHB1dD4NCiAgICA8L3dzZGw6b3BlcmF0aW9uPg0KICA8L3dzZGw6cG9ydFR5cGU+DQogIDx3c2RsOmJpbmRpbmcgbmFtZT0iVGVtcENvbnZlcnRTb2FwMTIiIHR5cGU9InRuczpUZW1wQ29udmVydFNvYXAiPg0KICAgIDxzb2FwMTI6YmluZGluZyB0cmFuc3BvcnQ9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvaHR0cCIvPg0KICAgIDx3c2RsOm9wZXJhdGlvbiBuYW1lPSJGYWhyZW5oZWl0VG9DZWxzaXVzIj4NCiAgICAgIDxzb2FwMTI6b3BlcmF0aW9uIHNvYXBBY3Rpb249Imh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL0ZhaHJlbmhlaXRUb0NlbHNpdXMiIHN0eWxlPSJkb2N1bWVudCIvPg0KICAgICAgPHdzZGw6aW5wdXQ+DQogICAgICAgIDxzb2FwMTI6Ym9keSB1c2U9ImxpdGVyYWwiLz4NCiAgICAgIDwvd3NkbDppbnB1dD4NCiAgICAgIDx3c2RsOm91dHB1dD4NCiAgICAgICAgPHNvYXAxMjpib2R5IHVzZT0ibGl0ZXJhbCIvPg0KICAgICAgPC93c2RsOm91dHB1dD4NCiAgICA8L3dzZGw6b3BlcmF0aW9uPg0KICAgIDx3c2RsOm9wZXJhdGlvbiBuYW1lPSJDZWxzaXVzVG9GYWhyZW5oZWl0Ij4NCiAgICAgIDxzb2FwMTI6b3BlcmF0aW9uIHNvYXBBY3Rpb249Imh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL0NlbHNpdXNUb0ZhaHJlbmhlaXQiIHN0eWxlPSJkb2N1bWVudCIvPg0KICAgICAgPHdzZGw6aW5wdXQ+DQogICAgICAgIDxzb2FwMTI6Ym9keSB1c2U9ImxpdGVyYWwiLz4NCiAgICAgIDwvd3NkbDppbnB1dD4NCiAgICAgIDx3c2RsOm91dHB1dD4NCiAgICAgICAgPHNvYXAxMjpib2R5IHVzZT0ibGl0ZXJhbCIvPg0KICAgICAgPC93c2RsOm91dHB1dD4NCiAgICA8L3dzZGw6b3BlcmF0aW9uPg0KICA8L3dzZGw6YmluZGluZz4NCiAgPHdzZGw6YmluZGluZyBuYW1lPSJUZW1wQ29udmVydEh0dHBQb3N0IiB0eXBlPSJ0bnM6VGVtcENvbnZlcnRIdHRwUG9zdCI+DQogICAgPGh0dHA6YmluZGluZyB2ZXJiPSJQT1NUIi8+DQogICAgPHdzZGw6b3BlcmF0aW9uIG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXMiPg0KICAgICAgPGh0dHA6b3BlcmF0aW9uIGxvY2F0aW9uPSIvRmFocmVuaGVpdFRvQ2Vsc2l1cyIvPg0KICAgICAgPHdzZGw6aW5wdXQ+DQogICAgICAgIDxtaW1lOmNvbnRlbnQgdHlwZT0iYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkIi8+DQogICAgICA8L3dzZGw6aW5wdXQ+DQogICAgICA8d3NkbDpvdXRwdXQ+DQogICAgICAgIDxtaW1lOm1pbWVYbWwgcGFydD0iQm9keSIvPg0KICAgICAgPC93c2RsOm91dHB1dD4NCiAgICA8L3dzZGw6b3BlcmF0aW9uPg0KICAgIDx3c2RsOm9wZXJhdGlvbiBuYW1lPSJDZWxzaXVzVG9GYWhyZW5oZWl0Ij4NCiAgICAgIDxodHRwOm9wZXJhdGlvbiBsb2NhdGlvbj0iL0NlbHNpdXNUb0ZhaHJlbmhlaXQiLz4NCiAgICAgIDx3c2RsOmlucHV0Pg0KICAgICAgICA8bWltZTpjb250ZW50IHR5cGU9ImFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCIvPg0KICAgICAgPC93c2RsOmlucHV0Pg0KICAgICAgPHdzZGw6b3V0cHV0Pg0KICAgICAgICA8bWltZTptaW1lWG1sIHBhcnQ9IkJvZHkiLz4NCiAgICAgIDwvd3NkbDpvdXRwdXQ+DQogICAgPC93c2RsOm9wZXJhdGlvbj4NCiAgPC93c2RsOmJpbmRpbmc+DQogIDx3c2RsOmJpbmRpbmcgbmFtZT0iVGVtcENvbnZlcnRTb2FwIiB0eXBlPSJ0bnM6VGVtcENvbnZlcnRTb2FwIj4NCiAgICA8c29hcDpiaW5kaW5nIHRyYW5zcG9ydD0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9odHRwIi8+DQogICAgPHdzZGw6b3BlcmF0aW9uIG5hbWU9IkZhaHJlbmhlaXRUb0NlbHNpdXMiPg0KICAgICAgPHNvYXA6b3BlcmF0aW9uIHNvYXBBY3Rpb249Imh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL0ZhaHJlbmhlaXRUb0NlbHNpdXMiIHN0eWxlPSJkb2N1bWVudCIvPg0KICAgICAgPHdzZGw6aW5wdXQ+DQogICAgICAgIDxzb2FwOmJvZHkgdXNlPSJsaXRlcmFsIi8+DQogICAgICA8L3dzZGw6aW5wdXQ+DQogICAgICA8d3NkbDpvdXRwdXQ+DQogICAgICAgIDxzb2FwOmJvZHkgdXNlPSJsaXRlcmFsIi8+DQogICAgICA8L3dzZGw6b3V0cHV0Pg0KICAgIDwvd3NkbDpvcGVyYXRpb24+DQogICAgPHdzZGw6b3BlcmF0aW9uIG5hbWU9IkNlbHNpdXNUb0ZhaHJlbmhlaXQiPg0KICAgICAgPHNvYXA6b3BlcmF0aW9uIHNvYXBBY3Rpb249Imh0dHBzOi8vd3d3Lnczc2Nob29scy5jb20veG1sL0NlbHNpdXNUb0ZhaHJlbmhlaXQiIHN0eWxlPSJkb2N1bWVudCIvPg0KICAgICAgPHdzZGw6aW5wdXQ+DQogICAgICAgIDxzb2FwOmJvZHkgdXNlPSJsaXRlcmFsIi8+DQogICAgICA8L3dzZGw6aW5wdXQ+DQogICAgICA8d3NkbDpvdXRwdXQ+DQogICAgICAgIDxzb2FwOmJvZHkgdXNlPSJsaXRlcmFsIi8+DQogICAgICA8L3dzZGw6b3V0cHV0Pg0KICAgIDwvd3NkbDpvcGVyYXRpb24+DQogIDwvd3NkbDpiaW5kaW5nPg0KICA8d3NkbDpzZXJ2aWNlIG5hbWU9IlRlbXBDb252ZXJ0Ij4NCiAgICA8d3NkbDpwb3J0IG5hbWU9IlRlbXBDb252ZXJ0U29hcCIgYmluZGluZz0idG5zOlRlbXBDb252ZXJ0U29hcCI+DQogICAgICA8c29hcDphZGRyZXNzIGxvY2F0aW9uPSJodHRwOi8vd3d3Lnczc2Nob29scy5jb20veG1sL3RlbXBjb252ZXJ0LmFzbXgiLz4NCiAgICA8L3dzZGw6cG9ydD4NCiAgICA8d3NkbDpwb3J0IG5hbWU9IlRlbXBDb252ZXJ0U29hcDEyIiBiaW5kaW5nPSJ0bnM6VGVtcENvbnZlcnRTb2FwMTIiPg0KICAgICAgPHNvYXAxMjphZGRyZXNzIGxvY2F0aW9uPSJodHRwOi8vd3d3Lnczc2Nob29scy5jb20veG1sL3RlbXBjb252ZXJ0LmFzbXgiLz4NCiAgICA8L3dzZGw6cG9ydD4NCiAgICA8d3NkbDpwb3J0IG5hbWU9IlRlbXBDb252ZXJ0SHR0cFBvc3QiIGJpbmRpbmc9InRuczpUZW1wQ29udmVydEh0dHBQb3N0Ij4NCiAgICAgIDxodHRwOmFkZHJlc3MgbG9jYXRpb249Imh0dHA6Ly93d3cudzNzY2hvb2xzLmNvbS94bWwvdGVtcGNvbnZlcnQuYXNteCIvPg0KICAgIDwvd3NkbDpwb3J0Pg0KICA8L3dzZGw6c2VydmljZT4NCjwvd3NkbDpkZWZpbml0aW9ucz4NCg==</list>
+  </attribute>
+</metadata>

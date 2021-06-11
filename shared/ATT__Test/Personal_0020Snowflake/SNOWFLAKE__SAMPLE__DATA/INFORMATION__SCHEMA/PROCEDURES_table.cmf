@@ -1,0 +1,165 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="PROCEDURES" path="/shared/ATT_Test/Personal Snowflake/SNOWFLAKE_SAMPLE_DATA/INFORMATION_SCHEMA/PROCEDURES" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="VIEW">
+  <annotation>&lt;![CDATA[The stored procedures defined in this database that are accessible to the current user&amp;apos;s role.]]&gt;</annotation>
+  <columns>
+    <column name="PROCEDURE_CATALOG" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Database which the procedure belongs to]]&gt;</annotation>
+    </column>
+    <column name="PROCEDURE_SCHEMA" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Schema which the procedure belongs to]]&gt;</annotation>
+    </column>
+    <column name="PROCEDURE_NAME" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Name of the procedure]]&gt;</annotation>
+    </column>
+    <column name="PROCEDURE_OWNER" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Name of the role that owns the procedure]]&gt;</annotation>
+    </column>
+    <column name="ARGUMENT_SIGNATURE" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Type signature of the procedure&amp;apos;s arguments]]&gt;</annotation>
+    </column>
+    <column name="DATA_TYPE" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Return value data type]]&gt;</annotation>
+    </column>
+    <column name="CHARACTER_MAXIMUM_LENGTH" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Maximum length in characters of string return value]]&gt;</annotation>
+    </column>
+    <column name="CHARACTER_OCTET_LENGTH" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Maximum length in bytes of string return value]]&gt;</annotation>
+    </column>
+    <column name="NUMERIC_PRECISION" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Numeric precision of numeric return value]]&gt;</annotation>
+    </column>
+    <column name="NUMERIC_PRECISION_RADIX" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Radix of precision of numeric return value]]&gt;</annotation>
+    </column>
+    <column name="NUMERIC_SCALE" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Scale of numeric return value]]&gt;</annotation>
+    </column>
+    <column name="PROCEDURE_LANGUAGE" nullable="false">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Language of the procedure]]&gt;</annotation>
+    </column>
+    <column name="PROCEDURE_DEFINITION" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Procedure definition]]&gt;</annotation>
+    </column>
+    <column name="CREATED" nullable="true">
+      <datatype name="TIMESTAMP" extendedName="TIMESTAMP" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Creation time of the procedure]]&gt;</annotation>
+    </column>
+    <column name="LAST_ALTERED" nullable="true">
+      <datatype name="TIMESTAMP" extendedName="TIMESTAMP" subType="DATASOURCE_TYPE" type="DATETIME"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Last altered time of the procedure]]&gt;</annotation>
+    </column>
+    <column name="COMMENT" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(16777216)" subType="DATASOURCE_TYPE" type="STRING" maxLength="16777216"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+      <annotation>&lt;![CDATA[Comment for this procedure]]&gt;</annotation>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="c:0:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:10:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:11:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:12:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:13:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:14:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:15:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:1:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:2:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:3:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:4:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:5:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:6:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:7:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:8:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:9:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="creationDate" type="LONG">1616689317900</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1616689317900</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1616689317900</attribute>
+</metadata>

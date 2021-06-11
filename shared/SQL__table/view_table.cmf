@@ -1,0 +1,82 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="view" path="/shared/sql_table/view" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="StudentId" nullable="true">
+      <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="StudentName" nullable="true">
+      <datatype type="STRING" maxLength="45"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Class" nullable="true">
+      <datatype type="STRING" maxLength="45"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="Address" nullable="true">
+      <datatype type="STRING" maxLength="45"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="MobileNo" nullable="true">
+      <datatype type="STRING" maxLength="45"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/sql_table/datasource/student" type="TABLE">
+    <datatype type="TABLE" refId="256">
+      <element name="StudentId" nullable="false">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="StudentName" nullable="false">
+        <datatype type="STRING" maxLength="45"/>
+      </element>
+      <element name="Class" nullable="false">
+        <datatype type="STRING" maxLength="45"/>
+      </element>
+      <element name="Address">
+        <datatype type="STRING" maxLength="45"/>
+      </element>
+      <element name="MobileNo" nullable="false">
+        <datatype type="STRING" maxLength="45"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT
+    student.StudentId, 
+    student.StudentName, 
+    student.Class, 
+    student.Address, 
+    student.MobileNo
+FROM      
+    /shared/sql_table/datasource/student student
+where  student.StudentId&gt;5 and student.Class=&apos;5B&apos; and student.StudentName=&apos;Damian&apos; </attribute>
+  <attribute name="creationDate" type="LONG">1614604160095</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="impactLevel" type="INTEGER">0</attribute>
+  <attribute name="impactMessage" type="NULL"/>
+  <attribute name="lastModifiedDate" type="LONG">1614611991571</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1614604160095</attribute>
+</metadata>

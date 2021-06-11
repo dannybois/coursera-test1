@@ -1,0 +1,291 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="ALL_COLUMNS" path="/shared/new_comp2/ALL_COLUMNS" type="TABLE" subtype="DATABASE_TABLE" changeToken="0" tableType="TABLE">
+  <annotation>&lt;![CDATA[This table exposes all the columns in all the tables in all the data sources to which the current user has access in
+the published as well as non-published area.
+
+Users can see columns in tables they have at least one privilege to.
+
+====================================================================================================
+ Column        Composite JDBC    Nullable   Description
+               Data Type
+====================================================================================================
+
+COLUMN_ID        INTEGER                    Primary key identifier of the column
+
+COLUMN_NAME      VARCHAR                    Name of the column
+
+DATA_TYPE        VARCHAR                    String representation of the data type
+
+ORDINAL_POSITION INTEGER                    Position of this column in relation to other columns in the same table
+
+JDBC_DATA_TYPE   SMALLINT                   JDBC/ODBC data types. For JDBC data types, see http://java.sun.com/j2se/1.4.2/docs/api/java/sql/Types.html
+
+COLUMN_LENGTH    INTEGER         Nullable   If it is a CHAR or VARCHAR, the length is the maximum length allowed. If it is a DECIMAL or NUMERIC, then the value is the total number of digits. If it is none of the above types, then the value is NULL.
+
+COLUMN_PRECISION INTEGER         Nullable   If it is a DECIMAL or NUMERIC data type, then it is the number of digits. If it is not a DECIMAL or NUMERIC data type, then the value is NULL.
+
+COLUMN_SCALE     INTEGER         Nullable
+
+COLUMN_RADIX     INTEGER         Nullable   10 for all numeric data types. Null for all non-numeric types.
+
+NULLABLE         SMALLINT                   Indicates whether the column is nullable
+             0 if NULL is not allowed
+             1 if NULL is allowed
+             2 if it is unknown
+
+IS_NULLABLE      VARCHAR                    Indicates whether the column is nullable
+             YES if it is nullable
+             NO if it is not nullable
+             Blank string is returned if value is not known
+
+TABLE_ID         INTEGER                    See TABLE_ID in Table: model.ALL_TABLES
+
+TABLE_NAME       VARCHAR                    See TABLE_NAME in Table: model.ALL_TABLES
+
+SCHEMA_ID        INTEGER         Nullable   See SCHEMA_ID in Table: model.ALL_SCHEMAS
+
+SCHEMA_NAME      VARCHAR         Nullable   See SCHEMA_NAME in Table: model.ALL_SCHEMAS
+
+CATALOG_ID       INTEGER         Nullable   See CATALOG_ID in Table: model.ALL_CATALOGS
+
+CATALOG_NAME     VARCHAR         Nullable   See CATALOG_NAME in Table: model.ALL_CATALOGS
+
+DATASOURCE_ID    INTEGER                    See DATASOURCE_ID in Table: model.ALL_DATASOURCES
+
+DATASOURCE_NAME  VARCHAR                    See DATASOURCE_NAME in Table: model.ALL_DATASOURCES
+
+ANNOTATION       VARCHAR         Nullable   Annotation for the column
+
+OWNER_ID         INTEGER                    Identifier for the user who created/owns the column. Same as USER_ID in Table: ALL_USERS
+
+OWNER            VARCHAR                    User name of the person that owns/created the data source. Same as USERNAME in Table: ALL_USERS
+
+PARENT_PATH      VARCHAR                    Path to the parent container]]&gt;</annotation>
+  <columns>
+    <column name="COLUMN_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="COLUMN_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DATA_TYPE" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ORDINAL_POSITION" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="JDBC_DATA_TYPE" nullable="true">
+      <datatype name="SMALLINT" extendedName="SMALLINT" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="COLUMN_LENGTH" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="COLUMN_PRECISION" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="COLUMN_SCALE" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="COLUMN_RADIX" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="NULLABLE" nullable="true">
+      <datatype name="SMALLINT" extendedName="SMALLINT" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-32768" maxValue="32767"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="IS_NULLABLE" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TABLE_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TABLE_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SCHEMA_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="SCHEMA_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CATALOG_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CATALOG_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DATASOURCE_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="DATASOURCE_NAME" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="ANNOTATION" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(2147483547)" subType="DATASOURCE_TYPE" type="STRING" maxLength="2147483547"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="OWNER_ID" nullable="true">
+      <datatype name="INTEGER" extendedName="INTEGER" subType="DATASOURCE_TYPE" type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="OWNER" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(255)" subType="DATASOURCE_TYPE" type="STRING" maxLength="255"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="PARENT_PATH" nullable="true">
+      <datatype name="VARCHAR" extendedName="VARCHAR(1043)" subType="DATASOURCE_TYPE" type="STRING" maxLength="1043"/>
+      <attribute name="mandatory" type="BOOLEAN">false</attribute>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes>
+    <index name="SYSTEM_COLUMNS_TABLE_ID_INDEX" type="OTHER" unique="false">
+      <indexColumn name="table_id" sortOrder="ASCENDING"/>
+    </index>
+    <index name="SYSTEM_COLUMNS_PATH_INDEX" type="OTHER" unique="false">
+      <indexColumn name="datasource_id" sortOrder="ASCENDING"/>
+      <indexColumn name="catalog_name" sortOrder="ASCENDING"/>
+      <indexColumn name="schema_name" sortOrder="ASCENDING"/>
+      <indexColumn name="table_name" sortOrder="ASCENDING"/>
+      <indexColumn name="ordinal_position" sortOrder="ASCENDING"/>
+    </index>
+    <index name="SYSTEM_COLUMNS_PRIV_INDEX" type="OTHER" unique="false">
+      <indexColumn name="has_col_priv" sortOrder="ASCENDING"/>
+      <indexColumn name="datasource_id" sortOrder="ASCENDING"/>
+    </index>
+    <index name="SYSTEM_COLUMNS_NAME_INDEX" type="OTHER" unique="false">
+      <indexColumn name="column_name" sortOrder="ASCENDING"/>
+    </index>
+    <index name="SYSTEM_COLUMNS_TABLE_INDEX" type="OTHER" unique="false">
+      <indexColumn name="table_name" sortOrder="ASCENDING"/>
+      <indexColumn name="ordinal_position" sortOrder="ASCENDING"/>
+    </index>
+    <index name="SYSTEM_COLUMNS_PKEY" type="PRIMARY_KEY" unique="true">
+      <indexColumn name="column_id" sortOrder="ASCENDING"/>
+      <indexColumn name="table_id" sortOrder="ASCENDING"/>
+    </index>
+  </indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="c:0:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:10:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:11:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:12:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:13:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:14:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:15:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:16:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:17:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:18:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:19:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:1:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:20:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:21:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:22:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:2:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:3:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:4:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:5:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:6:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:7:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:8:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="c:9:mandatory" type="BOOLEAN">false</attribute>
+  <attribute name="creationDate" type="LONG">1618999851989</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1620967872641</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1618999851989</attribute>
+</metadata>

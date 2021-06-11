@@ -1,0 +1,77 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="FahrenheitToCelsius" path="/shared/wsdl/new_wsd/TempConvert/TempConvertSoap/FahrenheitToCelsius" type="PROCEDURE" subtype="OPERATION" changeToken="0">
+  <parameters>
+    <parameter name="inputMessage" direction="IN" nullable="false">
+      <datatype name="Envelope" namespace="http://schemas.xmlsoap.org/soap/envelope/" referenceType="{http://schemas.xmlsoap.org/soap/envelope/}Envelope" type="XML" contentConstraint="SEQUENCE" schemaConstraint="ANY" componentType="TYPE" componentName="{http://schemas.xmlsoap.org/soap/envelope/}Envelope">
+        <schemaDatatype>
+          <datatype name="Envelope" namespace="http://schemas.xmlsoap.org/soap/envelope/" type="TREE" refId="257">
+            <element name="Body" namespace="http://schemas.xmlsoap.org/soap/envelope/">
+              <datatype name="Body" namespace="http://schemas.xmlsoap.org/soap/envelope/" type="TREE" refId="513">
+                <element name="FahrenheitToCelsius" namespace="https://www.w3schools.com/xml/" nullable="false">
+                  <datatype name="FahrenheitToCelsius" namespace="https://www.w3schools.com/xml/" superTypeName="anyType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" subType="ELEMENT_DECL" anonymous="true" type="TREE" refId="769">
+                    <element name="Fahrenheit" namespace="https://www.w3schools.com/xml/" minOccurs="0">
+                      <datatype name="string" namespace="http://www.w3.org/2001/XMLSchema" superTypeName="anySimpleType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" type="STRING" maxLength="2147483647"/>
+                    </element>
+                  </datatype>
+                </element>
+              </datatype>
+            </element>
+          </datatype>
+        </schemaDatatype>
+      </datatype>
+    </parameter>
+    <parameter name="outputMessage" direction="OUT" nullable="false">
+      <datatype name="Envelope" namespace="http://schemas.xmlsoap.org/soap/envelope/" referenceType="{http://schemas.xmlsoap.org/soap/envelope/}Envelope" type="XML" contentConstraint="SEQUENCE" schemaConstraint="ANY" componentType="TYPE" componentName="{http://schemas.xmlsoap.org/soap/envelope/}Envelope">
+        <schemaDatatype>
+          <datatype name="Envelope" namespace="http://schemas.xmlsoap.org/soap/envelope/" type="TREE" refId="257">
+            <element name="Body" namespace="http://schemas.xmlsoap.org/soap/envelope/">
+              <datatype name="Body" namespace="http://schemas.xmlsoap.org/soap/envelope/" type="TREE" refId="513">
+                <element name="FahrenheitToCelsiusResponse" namespace="https://www.w3schools.com/xml/" nullable="false">
+                  <datatype name="FahrenheitToCelsiusResponse" namespace="https://www.w3schools.com/xml/" superTypeName="anyType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" subType="ELEMENT_DECL" anonymous="true" type="TREE" refId="769">
+                    <element name="FahrenheitToCelsiusResult" namespace="https://www.w3schools.com/xml/" minOccurs="0">
+                      <datatype name="string" namespace="http://www.w3.org/2001/XMLSchema" superTypeName="anySimpleType" superTypeNamespace="http://www.w3.org/2001/XMLSchema" type="STRING" maxLength="2147483647"/>
+                    </element>
+                  </datatype>
+                </element>
+              </datatype>
+            </element>
+          </datatype>
+        </schemaDatatype>
+      </datatype>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="creationDate" type="LONG">1615303396397</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="httpVerb" type="NULL"/>
+  <attribute name="inputMessagePartPaths" type="STRING_ARRAY">
+    <item>&quot;{http://schemas.xmlsoap.org/soap/envelope/}Body&quot;/&quot;{https://www.w3schools.com/xml/}FahrenheitToCelsius&quot;</item>
+  </attribute>
+  <attribute name="inputMessageType" type="BYTE_ARRAY">EBAGAgAIAEUAbgB2AGUAbABvAHAAZQYkACkAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AeABtAGwAcwBvAGEAcAAuAG8AcgBnAC8AcwBvAGEAcAAvAGUAbgB2AGUAbABvAHAAZQAvBioAMwB7AGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwB9AEUAbgB2AGUAbABvAHAAZQMSAAABEAY5ADMAewBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgB4AG0AbABzAG8AYQBwAC4AbwByAGcALwBzAG8AYQBwAC8AZQBuAHYAZQBsAG8AcABlAC8AfQBFAG4AdgBlAGwAbwBwAGUDOgAAAAEIIxAfBgIACABFAG4AdgBlAGwAbwBwAGUGJAApAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwMSAAABAQMSAAABAQETAQkUAAAAARAhBhUABABCAG8AZAB5BiwAKQBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgB4AG0AbABzAG8AYQBwAC4AbwByAGcALwBzAG8AYQBwAC8AZQBuAHYAZQBsAG8AcABlAC8DLwAAAAEDFgAAAAADGgAAAAEDGwAAAAEDIP////8DIgAAAAAIGRAfBgIABABCAG8AZAB5BiQAKQBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgB4AG0AbABzAG8AYQBwAC4AbwByAGcALwBzAG8AYQBwAC8AZQBuAHYAZQBsAG8AcABlAC8DEgAAAgEDEgAAAgEBEwEJFAAAAAEQIQYVABMARgBhAGgAcgBlAG4AaABlAGkAdABUAG8AQwBlAGwAcwBpAHUAcwYsAB4AaAB0AHQAcABzADoALwAvAHcAdwB3AC4AdwAzAHMAYwBoAG8AbwBsAHMALgBjAG8AbQAvAHgAbQBsAC8DLwAAAAIDFgAAAAADGgAAAAEDGwAAAAEDIP////8DIgAAAAAIGRAfBgIAEwBGAGEAaAByAGUAbgBoAGUAaQB0AFQAbwBDAGUAbABzAGkAdQBzBiQAHgBoAHQAdABwAHMAOgAvAC8AdwB3AHcALgB3ADMAcwBjAGgAbwBvAGwAcwAuAGMAbwBtAC8AeABtAGwALwYlAAcAYQBuAHkAVAB5AHAAZQYoACAAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMgAwADAAMQAvAFgATQBMAFMAYwBoAGUAbQBhATABAysAAAAOAxIAAAMBAxIAAAMBARMBCRQAAAABECEGFQAKAEYAYQBoAHIAZQBuAGgAZQBpAHQGLAAeAGgAdAB0AHAAcwA6AC8ALwB3AHcAdwAuAHcAMwBzAGMAaABvAG8AbABzAC4AYwBvAG0ALwB4AG0AbAAvAy8AAAABAxYAAAAAAxoAAAAAAxsAAAABAyD/////AyIAAAAACBkQLwMS///3aP////////////////////8=</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1615303396397</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="messageType" type="STRING">Text</attribute>
+  <attribute name="outputMessagePartPaths" type="STRING_ARRAY">
+    <item>&quot;{http://schemas.xmlsoap.org/soap/envelope/}Body&quot;/&quot;{https://www.w3schools.com/xml/}FahrenheitToCelsiusResponse&quot;</item>
+  </attribute>
+  <attribute name="outputMessageType" type="BYTE_ARRAY">EBAGAgAIAEUAbgB2AGUAbABvAHAAZQYkACkAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AeABtAGwAcwBvAGEAcAAuAG8AcgBnAC8AcwBvAGEAcAAvAGUAbgB2AGUAbABvAHAAZQAvBioAMwB7AGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwB9AEUAbgB2AGUAbABvAHAAZQMSAAABEAY5ADMAewBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgB4AG0AbABzAG8AYQBwAC4AbwByAGcALwBzAG8AYQBwAC8AZQBuAHYAZQBsAG8AcABlAC8AfQBFAG4AdgBlAGwAbwBwAGUDOgAAAAEIIxAfBgIACABFAG4AdgBlAGwAbwBwAGUGJAApAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwMSAAABAQMSAAABAQETAQkUAAAAARAhBhUABABCAG8AZAB5BiwAKQBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgB4AG0AbABzAG8AYQBwAC4AbwByAGcALwBzAG8AYQBwAC8AZQBuAHYAZQBsAG8AcABlAC8DLwAAAAEDFgAAAAADGgAAAAEDGwAAAAEDIP////8DIgAAAAAIGRAfBgIABABCAG8AZAB5BiQAKQBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgB4AG0AbABzAG8AYQBwAC4AbwByAGcALwBzAG8AYQBwAC8AZQBuAHYAZQBsAG8AcABlAC8DEgAAAgEDEgAAAgEBEwEJFAAAAAEQIQYVABsARgBhAGgAcgBlAG4AaABlAGkAdABUAG8AQwBlAGwAcwBpAHUAcwBSAGUAcwBwAG8AbgBzAGUGLAAeAGgAdAB0AHAAcwA6AC8ALwB3AHcAdwAuAHcAMwBzAGMAaABvAG8AbABzAC4AYwBvAG0ALwB4AG0AbAAvAy8AAAACAxYAAAAAAxoAAAABAxsAAAABAyD/////AyIAAAAACBkQHwYCABsARgBhAGgAcgBlAG4AaABlAGkAdABUAG8AQwBlAGwAcwBpAHUAcwBSAGUAcwBwAG8AbgBzAGUGJAAeAGgAdAB0AHAAcwA6AC8ALwB3AHcAdwAuAHcAMwBzAGMAaABvAG8AbABzAC4AYwBvAG0ALwB4AG0AbAAvBiUABwBhAG4AeQBUAHkAcABlBigAIABoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEBMAEDKwAAAA4DEgAAAwEDEgAAAwEBEwEJFAAAAAEQIQYVABkARgBhAGgAcgBlAG4AaABlAGkAdABUAG8AQwBlAGwAcwBpAHUAcwBSAGUAcwB1AGwAdAYsAB4AaAB0AHQAcABzADoALwAvAHcAdwB3AC4AdwAzAHMAYwBoAG8AbwBsAHMALgBjAG8AbQAvAHgAbQBsAC8DLwAAAAEDFgAAAAADGgAAAAADGwAAAAEDIP////8DIgAAAAAIGRAvAxL///do/////////////////////w==</attribute>
+  <attribute name="paramPaths" type="STRING_ARRAY">
+    <item>/</item>
+    <item>/</item>
+  </attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1615303396397</attribute>
+  <attribute name="selectionState" type="INTEGER">2</attribute>
+  <attribute name="soapAction" type="STRING">https://www.w3schools.com/xml/FahrenheitToCelsius</attribute>
+  <attribute name="soapStyle" type="STRING">document</attribute>
+  <attribute name="sourceName" type="STRING">FahrenheitToCelsius</attribute>
+  <attribute name="timeout" type="LONG">-1</attribute>
+  <attribute name="usePortMappings" type="BOOLEAN">true</attribute>
+  <attribute name="usePortPipelines" type="BOOLEAN">true</attribute>
+</metadata>

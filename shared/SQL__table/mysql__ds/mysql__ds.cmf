@@ -1,0 +1,100 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:89d3baff-3c9e-4944-b8c7-91e24878c006 -->
+<metadata name="mysql_ds" path="/shared/sql_table/mysql_ds" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="0">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/sql_table/mysql_ds/cache_status" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="257"></datatype>
+  </dependency>
+  <dependency target="/shared/sql_table/mysql_ds/cache_tracking" type="TABLE">
+    <datatype name="Tree" type="TREE" refId="257"></datatype>
+  </dependency>
+  <attribute name="OAuthConfig" type="NULL"/>
+  <attribute name="cacheStatusAndTrackingDS" type="STRING"/>
+  <attribute name="cacheStatusTable" type="STRING">/shared/sql_table/mysql_ds/cache_status</attribute>
+  <attribute name="cacheTrackingTable" type="STRING">/shared/sql_table/mysql_ds/cache_tracking</attribute>
+  <attribute name="collationSensitive" type="BOOLEAN">false</attribute>
+  <attribute name="commitOnFetchDone" type="BOOLEAN">true</attribute>
+  <attribute name="concurrentRequestLimit" type="INTEGER">0</attribute>
+  <attribute name="connCheckOutProcedure" type="STRING"/>
+  <attribute name="connPoolMaxSize" type="INTEGER">100</attribute>
+  <attribute name="connPoolMinSize" type="INTEGER">0</attribute>
+  <attribute name="connPoolTimeout" type="INTEGER">30</attribute>
+  <attribute name="connProperties" type="MAP">
+    <item>
+      <key type="STRING">characterEncoding</key>
+      <value type="STRING">UTF8</value>
+    </item>
+    <item>
+      <key type="STRING">clobberStreamingResults</key>
+      <value type="STRING">true</value>
+    </item>
+    <item>
+      <key type="STRING">connectTimeout</key>
+      <value type="STRING">60000</value>
+    </item>
+    <item>
+      <key type="STRING">useReadAheadInput</key>
+      <value type="STRING">true</value>
+    </item>
+    <item>
+      <key type="STRING">useUnicode</key>
+      <value type="STRING">true</value>
+    </item>
+    <item>
+      <key type="STRING">zeroDateTimeBehavior</key>
+      <value type="STRING">convertToNull</value>
+    </item>
+  </attribute>
+  <attribute name="connStaleTimeout" type="INTEGER">60</attribute>
+  <attribute name="connValidateQuery" type="STRING"/>
+  <attribute name="connectorName" type="STRING"/>
+  <attribute name="creationDate" type="LONG">1604344804585</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="driverName" type="STRING">MySQL 5.5</attribute>
+  <attribute name="execTimeout" type="INTEGER">0</attribute>
+  <attribute name="healthmonitortable" type="STRING">cis_hm_table</attribute>
+  <attribute name="isPassThrough" type="STRING">Disabled</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1614745820023</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="login" type="STRING">root</attribute>
+  <attribute name="maxNumberForOrSyntax" type="INTEGER">2147483647</attribute>
+  <attribute name="maxSourceSideCardinalityForSJ" type="STRING"/>
+  <attribute name="maximumContainerDepth" type="INTEGER">0</attribute>
+  <attribute name="minTargetToSourceRatioForSJ" type="STRING"/>
+  <attribute name="name" type="STRING">mysql_ds</attribute>
+  <attribute name="nativeDataLoadingEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="password" type="PASSWORD_STRING">ENC(R8e6ejLwf8cMI4dJ+dZoUw==$1IoUHX+4fWoEmDqeNTIJIA==)</attribute>
+  <attribute name="persistPassword" type="BOOLEAN">true</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1604344804585</attribute>
+  <attribute name="selectionState" type="INTEGER">1</attribute>
+  <attribute name="streamingResults" type="BOOLEAN">true</attribute>
+  <attribute name="supportsStarSchema" type="BOOLEAN">false</attribute>
+  <attribute name="topicName" type="STRING"/>
+  <attribute name="txnIsolationLevel" type="STRING">Read Committed</attribute>
+  <attribute name="type" type="STRING">MySql</attribute>
+  <attribute name="url" type="STRING">jdbc:mysql://localhost:3306/test1</attribute>
+  <attribute name="urlDatabaseName" type="STRING">test1</attribute>
+  <attribute name="urlIP" type="STRING">localhost</attribute>
+  <attribute name="urlPatternStr" type="STRING">jdbc:mysql://&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE_NAME&gt;</attribute>
+  <attribute name="urlPort" type="INTEGER">3306</attribute>
+  <attribute name="userDeletedSet" type="SET">
+    <item type="NAME_TYPE_PAIR">
+      <name>cache1</name>
+      <type>2</type>
+    </item>
+    <item type="NAME_TYPE_PAIR">
+      <name>cache0</name>
+      <type>2</type>
+    </item>
+    <item type="NAME_TYPE_PAIR">
+      <name>cache2</name>
+      <type>2</type>
+    </item>
+  </attribute>
+</metadata>
