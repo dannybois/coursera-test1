@@ -1,0 +1,184 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:25381ab6-02db-473d-81ae-80e491c7bdb7 -->
+<metadata name="sample" path="/shared/01933446/sample" type="PROCEDURE" subtype="TRANSFORM_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="output2" direction="OUT" nullable="unknown">
+      <datatype name="LONGVARCHAR" type="STRING" maxLength="2147483647"/>
+    </parameter>
+    <parameter name="output" direction="IN" nullable="unknown">
+      <datatype name="LONGVARCHAR" type="STRING" maxLength="2147483647"/>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/01933446/sample_rest/req" type="PROCEDURE">
+    <datatype name="Tree" type="TREE" refId="257"></datatype>
+  </dependency>
+  <dependency target="/shared/01933446/sample_rest/reqDefinitions" type="DEFINITION_SET">
+    <datatype name="Tree" type="TREE" refId="257"></datatype>
+  </dependency>
+  <attribute name="creationDate" type="LONG">1616607378198</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1617632665107</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1616607378198</attribute>
+  <attribute name="transformModel" type="STRING">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;transformModel targetLanguage=&quot;XQUERY&quot; id=&quot;model&quot; xmlns:ns1=&quot;http://www.compositesw.com/transform/expr/types&quot;&gt;
+    &lt;parameter minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot; direction=&quot;OUT&quot; id=&quot;output2&quot;&gt;
+        &lt;dataType xsi:type=&quot;stringType&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+            &lt;ns1:properties/&gt;
+            &lt;ns1:qualifications&gt;
+                &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;CIS:/lib/types/sql:LONGVARCHAR&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;stringTrimmed&quot; ns1:trimmed=&quot;false&quot; ns1:name=&quot;StringTrimmed&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;valueLengthMaximum&quot; ns1:length=&quot;2147483647&quot; ns1:name=&quot;ValueLengthMaximum&quot;/&gt;
+            &lt;/ns1:qualifications&gt;
+        &lt;/dataType&gt;
+    &lt;/parameter&gt;
+    &lt;parameter minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot; direction=&quot;IN&quot; id=&quot;output&quot;&gt;
+        &lt;dataType xsi:type=&quot;stringType&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+            &lt;ns1:properties/&gt;
+            &lt;ns1:qualifications&gt;
+                &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;CIS:/lib/types/sql:LONGVARCHAR&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;stringTrimmed&quot; ns1:trimmed=&quot;false&quot; ns1:name=&quot;StringTrimmed&quot;/&gt;
+                &lt;ns1:qualification xsi:type=&quot;valueLengthMaximum&quot; ns1:length=&quot;2147483647&quot; ns1:name=&quot;ValueLengthMaximum&quot;/&gt;
+            &lt;/ns1:qualifications&gt;
+        &lt;/dataType&gt;
+    &lt;/parameter&gt;
+    &lt;imports&gt;
+        &lt;import&gt;/lib/types/sql&lt;/import&gt;
+        &lt;import&gt;/lib/types/extendedSql&lt;/import&gt;
+        &lt;import&gt;/lib/types/xmlSchema2001&lt;/import&gt;
+        &lt;import&gt;/shared/01933446/sample_rest/reqDefinitions&lt;/import&gt;
+    &lt;/imports&gt;
+    &lt;links&gt;
+        &lt;link xsi:type=&quot;tmAssignLink&quot; target=&quot;/out/output2&quot; source=&quot;/in/output&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;
+    &lt;/links&gt;
+    &lt;nodes&gt;
+        &lt;node xsi:type=&quot;tmInputNode&quot; id=&quot;in&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;
+        &lt;node xsi:type=&quot;tmOutputNode&quot; id=&quot;out&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;
+        &lt;node xsi:type=&quot;tmInvokeResourceNode&quot; resourceType=&quot;3&quot; resourcePath=&quot;/shared/01933446/sample_rest/req&quot; id=&quot;req&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+            &lt;parameter nullable=&quot;false&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot; direction=&quot;OUT&quot; id=&quot;wrapper&quot;&gt;
+                &lt;dataType xsi:type=&quot;structType&quot; serializationId=&quot;1&quot;&gt;
+                    &lt;ns1:properties/&gt;
+                    &lt;ns1:qualifications&gt;
+                        &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                        &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                        &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:#AnonType_wrapper&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                        &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                    &lt;/ns1:qualifications&gt;
+                    &lt;ns1:componentTypes xsi:type=&quot;projectedValueType&quot; ns1:name=&quot;networks&quot; serializationId=&quot;2&quot;&gt;
+                        &lt;ns1:properties/&gt;
+                        &lt;ns1:qualifications&gt;
+                            &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:#AnonType_wrapper&quot; ns1:name=&quot;ComponentSourceType&quot;/&gt;
+                            &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;2147483647&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                            &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;0&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                            &lt;ns1:qualification xsi:type=&quot;nativeProjection&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:networks&quot; ns1:name=&quot;NativeProjection&quot;/&gt;
+                            &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                        &lt;/ns1:qualifications&gt;
+                        &lt;ns1:baseType xsi:type=&quot;structType&quot; serializationId=&quot;3&quot;&gt;
+                            &lt;ns1:properties/&gt;
+                            &lt;ns1:qualifications&gt;
+                                &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                                &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                                &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:#AnonType_networkswrapper&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                                &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                            &lt;/ns1:qualifications&gt;
+                            &lt;ns1:componentTypes xsi:type=&quot;projectedValueType&quot; ns1:name=&quot;href&quot; serializationId=&quot;4&quot;&gt;
+                                &lt;ns1:properties/&gt;
+                                &lt;ns1:qualifications&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:#AnonType_networkswrapper&quot; ns1:name=&quot;ComponentSourceType&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;nativeProjection&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:href&quot; ns1:name=&quot;NativeProjection&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                                &lt;/ns1:qualifications&gt;
+                                &lt;ns1:baseType xsi:type=&quot;stringType&quot;&gt;
+                                    &lt;ns1:properties/&gt;
+                                    &lt;ns1:qualifications&gt;
+                                        &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:{http://www.w3.org/2001/XMLSchema}string&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                                        &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                                    &lt;/ns1:qualifications&gt;
+                                &lt;/ns1:baseType&gt;
+                            &lt;/ns1:componentTypes&gt;
+                            &lt;ns1:componentTypes xsi:type=&quot;projectedValueType&quot; ns1:name=&quot;id&quot; serializationId=&quot;5&quot;&gt;
+                                &lt;ns1:properties/&gt;
+                                &lt;ns1:qualifications&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:#AnonType_networkswrapper&quot; ns1:name=&quot;ComponentSourceType&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;nativeProjection&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:id&quot; ns1:name=&quot;NativeProjection&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                                &lt;/ns1:qualifications&gt;
+                                &lt;ns1:baseType xsi:type=&quot;stringType&quot;&gt;
+                                    &lt;ns1:properties/&gt;
+                                    &lt;ns1:qualifications&gt;
+                                        &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:{http://www.w3.org/2001/XMLSchema}string&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                                        &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                                    &lt;/ns1:qualifications&gt;
+                                &lt;/ns1:baseType&gt;
+                            &lt;/ns1:componentTypes&gt;
+                            &lt;ns1:componentTypes xsi:type=&quot;projectedValueType&quot; ns1:name=&quot;name&quot; serializationId=&quot;6&quot;&gt;
+                                &lt;ns1:properties/&gt;
+                                &lt;ns1:qualifications&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:#AnonType_networkswrapper&quot; ns1:name=&quot;ComponentSourceType&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;countMaximum&quot; ns1:limit=&quot;1&quot; ns1:name=&quot;CountMaximum&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;countMinimum&quot; ns1:minCount=&quot;1&quot; ns1:name=&quot;CountMinimum&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;nativeProjection&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:name&quot; ns1:name=&quot;NativeProjection&quot;/&gt;
+                                    &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                                &lt;/ns1:qualifications&gt;
+                                &lt;ns1:baseType xsi:type=&quot;stringType&quot;&gt;
+                                    &lt;ns1:properties/&gt;
+                                    &lt;ns1:qualifications&gt;
+                                        &lt;ns1:qualification xsi:type=&quot;nativeType&quot; ns1:typeName=&quot;XML:/shared/01933446/sample_rest/reqDefinitions:{http://www.w3.org/2001/XMLSchema}string&quot; ns1:name=&quot;NativeType&quot;/&gt;
+                                        &lt;ns1:qualification xsi:type=&quot;valueNillable&quot; ns1:nillable=&quot;false&quot; ns1:name=&quot;ValueNillable&quot;/&gt;
+                                    &lt;/ns1:qualifications&gt;
+                                &lt;/ns1:baseType&gt;
+                            &lt;/ns1:componentTypes&gt;
+                        &lt;/ns1:baseType&gt;
+                    &lt;/ns1:componentTypes&gt;
+                &lt;/dataType&gt;
+            &lt;/parameter&gt;
+        &lt;/node&gt;
+    &lt;/nodes&gt;
+    &lt;prefixMap&gt;
+        &lt;namespaceToPrefix&gt;
+            &lt;entry value=&quot;xmlns&quot; key=&quot;http://www.w3.org/2000/xmlns/&quot;/&gt;
+            &lt;entry value=&quot;custom&quot; key=&quot;http://compositesw.com/transform/custom&quot;/&gt;
+            &lt;entry value=&quot;xquery&quot; key=&quot;http://compositesw.com/transform/xquery&quot;/&gt;
+            &lt;entry value=&quot;xsi&quot; key=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;/&gt;
+            &lt;entry value=&quot;xs&quot; key=&quot;http://www.w3.org/2001/XMLSchema&quot;/&gt;
+            &lt;entry value=&quot;sql&quot; key=&quot;http://compositesw.com/transform/sql&quot;/&gt;
+        &lt;/namespaceToPrefix&gt;
+    &lt;/prefixMap&gt;
+    &lt;transformOptions&gt;
+        &lt;rootElementNamesapce&gt;false&lt;/rootElementNamesapce&gt;
+    &lt;/transformOptions&gt;
+&lt;/transformModel&gt;
+</attribute>
+  <attribute name="transformSource" type="STRING">declare copy-namespaces no-preserve,inherit;
+declare namespace xquery =  &quot;http://compositesw.com/transform/xquery&quot;;
+declare namespace custom =  &quot;http://compositesw.com/transform/custom&quot;;
+declare namespace xs =  &quot;http://www.w3.org/2001/XMLSchema&quot;;
+declare namespace ext2 =  &quot;http://www.compositesw.com/extensions2&quot;;
+declare namespace sql =  &quot;http://compositesw.com/transform/sql&quot;;
+
+declare variable $output external;
+let $nodes := 
+(
+  element output2
+  {
+    $output
+  }
+)
+return
+$nodes</attribute>
+</metadata>
