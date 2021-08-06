@@ -1,0 +1,99 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:60a72f69-53d8-4651-8a7d-bf738833314c -->
+<metadata name="BaoyingsTest1" path="/shared/96309_NestedWITH_in-house/BaoyingsTest1" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="process_spec" nullable="true">
+      <datatype type="STRING" maxLength="50"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/LookupProduct" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="desiredProduct" direction="IN">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="result" direction="OUT">
+        <datatype type="TABLE" refId="2">
+          <element name="ProductName">
+            <datatype type="STRING" maxLength="50"/>
+          </element>
+          <element name="ProductID">
+            <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+          </element>
+          <element name="ProductDescription">
+            <datatype type="STRING" maxLength="255"/>
+          </element>
+        </datatype>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/shared/ds_inventory/tutorial/categories" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="categoryid" nullable="false">
+        <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
+      </element>
+      <element name="categoryname">
+        <datatype type="STRING" maxLength="50"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">with status as (
+
+                select
+
+                 productName process_spec
+
+                from 
+
+				/shared/LookupProduct(1)--/users/composite/admin/bala/t1
+
+				
+
+),
+
+seq as (
+
+                select
+
+                categoryname process_spec
+
+                from  /shared/ds_inventory/tutorial/categories
+
+                where categoryname in (select process_spec from status)
+
+),
+
+ 
+
+status_seq as (
+
+select
+
+                a.process_spec
+
+                from status a  left outer join seq b on a.process_spec = b.process_spec 
+
+)
+
+select * from status_seq
+
+</attribute>
+  <attribute name="creationDate" type="LONG">1625618634193</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1625618645144</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1625618634193</attribute>
+</metadata>

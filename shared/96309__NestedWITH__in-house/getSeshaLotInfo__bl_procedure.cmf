@@ -1,0 +1,64 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:60a72f69-53d8-4651-8a7d-bf738833314c -->
+<metadata name="getSeshaLotInfo_bl" path="/shared/96309_NestedWITH_in-house/getSeshaLotInfo_bl" type="PROCEDURE" subtype="SQL_SCRIPT_PROCEDURE" changeToken="0">
+  <parameters>
+    <parameter name="pvLot" direction="IN" nullable="true">
+      <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+    </parameter>
+    <parameter name="RESULTS" direction="OUT" nullable="true">
+      <datatype name="RESULTS" type="TABLE" refId="1">
+        <element name="CONTAINERID">
+          <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+        </element>
+        <element name="CONTAINERNAME">
+          <datatype name="VARCHAR" type="STRING" maxLength="255"/>
+        </element>
+        <element name="LASTACTIVITYDATE">
+          <datatype name="TIMESTAMP" type="DATETIME"/>
+        </element>
+      </datatype>
+    </parameter>
+  </parameters>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/96309_NestedWITH_in-house" type="CONTAINER">
+    <datatype name="Tree" type="TREE" refId="1"></datatype>
+  </dependency>
+  <attribute name="Script" type="STRING">PROCEDURE getSeshaLotInfo_bl(IN pvLot VARCHAR
+, OUT RESULTS PIPE (
+CONTAINERID VARCHAR,
+CONTAINERNAME VARCHAR,
+LASTACTIVITYDATE TIMESTAMP
+)
+)
+BEGIN
+PATH /shared/&quot;96309_NestedWITH_in-house&quot;;
+DECLARE vSql LONGVARCHAR;
+
+
+	
+	SET vSql = &apos;INSERT INTO RESULTS &apos;;
+	SET vSql = vSql || &apos;SELECT *  &apos;;	
+	SET vSql = vSql || &apos;FROM SESHA_C_PF Lot &apos;;
+	SET vSql = vSql || &apos;WHERE 1 = 1 &apos;;
+	IF pvLot IS NOT NULL AND LENGTH(pvLot) &gt; 0 THEN 
+		SET vSql = vSql || &apos; AND Lot.ContainerName=pvLot&apos;; 
+	END IF;
+
+	EXECUTE IMMEDIATE vSql;
+END</attribute>
+  <attribute name="creationDate" type="LONG">1624270751427</attribute>
+  <attribute name="creatorUserDomain" type="STRING">ad.shared</attribute>
+  <attribute name="creatorUserId" type="INTEGER">30107</attribute>
+  <attribute name="creatorUserName" type="STRING">sesha.reddy@wdc.com</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1626103891818</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">30107</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="native_only" type="STRING">false</attribute>
+  <attribute name="references" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1624270751427</attribute>
+</metadata>

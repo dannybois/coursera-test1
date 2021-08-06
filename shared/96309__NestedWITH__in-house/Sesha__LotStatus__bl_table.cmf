@@ -1,0 +1,95 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:60a72f69-53d8-4651-8a7d-bf738833314c -->
+<metadata name="Sesha_LotStatus_bl" path="/shared/96309_NestedWITH_in-house/Sesha_LotStatus_bl" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="CONTAINERID" nullable="true">
+      <datatype type="STRING" minLength="16" maxLength="16"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CONTAINERNAME" nullable="true">
+      <datatype type="STRING" maxLength="40"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LASTACTIVITYDATE" nullable="true">
+      <datatype type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TRACKSTATUS" nullable="true">
+      <datatype type="STRING" maxLength="40"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LastTrackSequence" nullable="true">
+      <datatype type="INTEGER"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/96309_NestedWITH_in-house/SESHA_C_PF" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="CONTAINERID">
+        <datatype type="STRING" minLength="16" maxLength="16"/>
+      </element>
+      <element name="CONTAINERNAME">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="LASTACTIVITYDATE">
+        <datatype type="DATETIME"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/shared/96309_NestedWITH_in-house/SESHA_WE_PF" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="CONTAINERID">
+        <datatype type="STRING" minLength="16" maxLength="16"/>
+      </element>
+      <element name="TRACKSEQUENCE">
+        <datatype type="INTEGER"/>
+      </element>
+      <element name="TRACKSTATUS">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">WITH LT AS (SELECT 
+        we.ContainerId,
+        MAX(we.TrackSequence) as LastTrackSequence
+    --FROM /shared/DEVTeamContent/Sesha/HOTFIX_TEST/Issue/SESHA_WE_PF we
+    FROM /shared/&quot;96309_NestedWITH_in-house&quot;/SESHA_WE_PF we
+    GROUP BY we.ContainerId)
+SELECT 
+    Lot.*,
+    WE.TRACKSTATUS,
+    lts.LastTrackSequence
+--FROM /shared/DEVTeamContent/Sesha/HOTFIX_TEST/Issue/SESHA_C_PF Lot LEFT OUTER JOIN
+FROM  /shared/&quot;96309_NestedWITH_in-house&quot;/SESHA_C_PF Lot LEFT OUTER JOIN
+        LT lts
+    ON lts.ContainerId = Lot.ContainerId LEFT OUTER JOIN 
+        --/shared/DEVTeamContent/Sesha/HOTFIX_TEST/CAMSTAR_ORCL/DVUSER/SESHA_WE we
+     /shared/&quot;96309_NestedWITH_in-house&quot;/SESHA_WE_PF we
+    ON we.ContainerId = Lot.ContainerId AND we.TrackSequence = lts.LastTrackSequence</attribute>
+  <attribute name="creationDate" type="LONG">1624250916099</attribute>
+  <attribute name="creatorUserDomain" type="STRING">ad.shared</attribute>
+  <attribute name="creatorUserId" type="INTEGER">30107</attribute>
+  <attribute name="creatorUserName" type="STRING">sesha.reddy@wdc.com</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1626103882475</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">30107</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1624250916099</attribute>
+</metadata>

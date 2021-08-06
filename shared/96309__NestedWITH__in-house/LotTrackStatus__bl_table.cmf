@@ -1,0 +1,53 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:60a72f69-53d8-4651-8a7d-bf738833314c -->
+<metadata name="LotTrackStatus_bl" path="/shared/96309_NestedWITH_in-house/LotTrackStatus_bl" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="ContainerId" nullable="true">
+      <datatype type="STRING" minLength="16" maxLength="16"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LastTrackSequence" nullable="true">
+      <datatype type="INTEGER"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/96309_NestedWITH_in-house/SESHA_WE_PF" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="CONTAINERID">
+        <datatype type="STRING" minLength="16" maxLength="16"/>
+      </element>
+      <element name="TRACKSEQUENCE">
+        <datatype type="INTEGER"/>
+      </element>
+      <element name="TRACKSTATUS">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">SELECT 
+        we.ContainerId,
+        MAX(we.TrackSequence) as LastTrackSequence
+--    FROM /shared/DEVTeamContent/Sesha/HOTFIX_TEST/Issue/SESHA_WE_PF we
+FROM /shared/&quot;96309_NestedWITH_in-house&quot;/SESHA_WE_PF we
+    GROUP BY we.ContainerId</attribute>
+  <attribute name="creationDate" type="LONG">1624429174888</attribute>
+  <attribute name="creatorUserDomain" type="STRING">ad.shared</attribute>
+  <attribute name="creatorUserId" type="INTEGER">30107</attribute>
+  <attribute name="creatorUserName" type="STRING">sesha.reddy@wdc.com</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1625616834625</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">30107</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1624429174888</attribute>
+</metadata>

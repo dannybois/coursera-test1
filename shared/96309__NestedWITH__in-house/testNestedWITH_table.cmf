@@ -1,0 +1,132 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:60a72f69-53d8-4651-8a7d-bf738833314c -->
+<metadata name="testNestedWITH" path="/shared/96309_NestedWITH_in-house/testNestedWITH" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
+  <columns>
+    <column name="CONTAINERID" nullable="true">
+      <datatype type="STRING" minLength="16" maxLength="16"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="CONTAINERNAME" nullable="true">
+      <datatype type="STRING" maxLength="40"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LASTACTIVITYDATE" nullable="true">
+      <datatype type="DATETIME"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="TRACKSTATUS" nullable="true">
+      <datatype type="STRING" maxLength="40"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="LastTrackSequence" nullable="true">
+      <datatype type="INTEGER"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+    <column name="seq" nullable="true">
+      <datatype type="INTEGER" minValue="-128" maxValue="127"/>
+      <security>
+        <owner user="admin" domain="composite"/>
+      </security>
+    </column>
+  </columns>
+  <indexes></indexes>
+  <foreignKeys></foreignKeys>
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <dependency target="/shared/96309_NestedWITH_in-house/Sesha_LotStatus_bl" type="TABLE">
+    <datatype type="TABLE" refId="1">
+      <element name="CONTAINERID">
+        <datatype type="STRING" minLength="16" maxLength="16"/>
+      </element>
+      <element name="CONTAINERNAME">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="LASTACTIVITYDATE">
+        <datatype type="DATETIME"/>
+      </element>
+      <element name="TRACKSTATUS">
+        <datatype type="STRING" maxLength="40"/>
+      </element>
+      <element name="LastTrackSequence">
+        <datatype type="INTEGER"/>
+      </element>
+    </datatype>
+  </dependency>
+  <dependency target="/shared/96309_NestedWITH_in-house/getSeshaLotInfo_bl" type="PROCEDURE">
+    <datatype type="PROCEDURE" refId="1">
+      <element name="pvLot" direction="IN">
+        <datatype type="STRING" maxLength="255"/>
+      </element>
+      <element name="RESULTS" direction="OUT">
+        <datatype type="TABLE" refId="2">
+          <element name="CONTAINERID">
+            <datatype type="STRING" maxLength="255"/>
+          </element>
+          <element name="CONTAINERNAME">
+            <datatype type="STRING" maxLength="255"/>
+          </element>
+          <element name="LASTACTIVITYDATE">
+            <datatype type="DATETIME"/>
+          </element>
+        </datatype>
+      </element>
+    </datatype>
+  </dependency>
+  <attribute name="SQL" type="STRING">WITH status AS
+(
+    SELECT
+      *
+    FROM /shared/&quot;96309_NestedWITH_in-house&quot;/Sesha_LotStatus_bl
+    WHERE ContainerName IN (&apos;AN1&apos;, &apos;AN10&apos;)
+    AND ContainerName NOT LIKE (&apos;V%&apos;)
+),
+
+seq AS
+ 
+(
+    SELECT
+      *,
+      1 Seq
+    FROM /shared/&quot;96309_NestedWITH_in-house&quot;/getSeshaLotInfo_bl(&apos; &apos;)
+    WHERE ContainerName IN (SELECT ContainerName FROM status)
+),
+
+status_seq AS
+ 
+(
+    SELECT
+      a.*,
+      b.Seq AS seq
+    FROM status a
+    LEFT OUTER JOIN seq b
+      ON a.ContainerName = b.ContainerName
+)
+
+SELECT
+  *
+FROM status_seq
+
+</attribute>
+  <attribute name="creationDate" type="LONG">1625613625482</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1626075815657</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="model" type="NULL"/>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1625613625482</attribute>
+</metadata>

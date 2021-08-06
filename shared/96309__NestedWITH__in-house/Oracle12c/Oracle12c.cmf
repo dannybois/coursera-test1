@@ -1,0 +1,90 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- salt:60a72f69-53d8-4651-8a7d-bf738833314c -->
+<metadata name="Oracle12c" path="/shared/96309_NestedWITH_in-house/Oracle12c" type="DATA_SOURCE" subtype="RELATIONAL" changeToken="0">
+  <security>
+    <owner user="admin" domain="composite"/>
+  </security>
+  <attribute name="DBLinkList" type="MAP"></attribute>
+  <attribute name="LowerBoundForDataShip" type="LONG">50000</attribute>
+  <attribute name="OAuthConfig" type="NULL"/>
+  <attribute name="UpperBoundForDataShip" type="LONG">5000000</attribute>
+  <attribute name="authentication" type="STRING">BASIC</attribute>
+  <attribute name="cacheStatusAndTrackingDS" type="STRING"/>
+  <attribute name="cacheStatusTable" type="STRING"/>
+  <attribute name="cacheTrackingTable" type="STRING"/>
+  <attribute name="collationSensitive" type="BOOLEAN">false</attribute>
+  <attribute name="commitOnFetchDone" type="BOOLEAN">false</attribute>
+  <attribute name="concurrentRequestLimit" type="INTEGER">0</attribute>
+  <attribute name="connCheckOutProcedure" type="STRING"/>
+  <attribute name="connPoolMaxSize" type="INTEGER">100</attribute>
+  <attribute name="connPoolMinSize" type="INTEGER">0</attribute>
+  <attribute name="connPoolTimeout" type="INTEGER">30</attribute>
+  <attribute name="connProperties" type="MAP">
+    <item>
+      <key type="STRING">AccumulateBatchResult</key>
+      <value type="STRING">true</value>
+    </item>
+    <item>
+      <key type="STRING">processEscapes</key>
+      <value type="STRING">true</value>
+    </item>
+    <item>
+      <key type="STRING">SetBigStringTryClob</key>
+      <value type="STRING">true</value>
+    </item>
+    <item>
+      <key type="STRING">connectTimeout</key>
+      <value type="STRING">30</value>
+    </item>
+    <item>
+      <key type="STRING">disableDefineColumnType</key>
+      <value type="STRING">true</value>
+    </item>
+  </attribute>
+  <attribute name="connStaleTimeout" type="INTEGER">60</attribute>
+  <attribute name="connValidateQuery" type="STRING"/>
+  <attribute name="connectorName" type="STRING"/>
+  <attribute name="creationDate" type="LONG">1612040292508</attribute>
+  <attribute name="creatorUserDomain" type="STRING">composite</attribute>
+  <attribute name="creatorUserId" type="INTEGER">-1973</attribute>
+  <attribute name="creatorUserName" type="STRING">admin</attribute>
+  <attribute name="dataShipTempTablePrefix" type="STRING">T</attribute>
+  <attribute name="destinationSchema" type="STRING"/>
+  <attribute name="driverName" type="STRING">Oracle 12c (Thin Driver)</attribute>
+  <attribute name="enablePassThroughPreparedStatements" type="BOOLEAN">false</attribute>
+  <attribute name="execTimeout" type="INTEGER">0</attribute>
+  <attribute name="healthmonitortable" type="STRING">cis_hm_table</attribute>
+  <attribute name="includeInvalidObjects" type="BOOLEAN">false</attribute>
+  <attribute name="introspectCommentsEnabled" type="BOOLEAN">false</attribute>
+  <attribute name="introspectProceduresEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="introspectUsingDBA_Views" type="BOOLEAN">false</attribute>
+  <attribute name="isPassThrough" type="STRING">Disabled</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1626345750961</attribute>
+  <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
+  <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
+  <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
+  <attribute name="login" type="STRING">NATHAN1</attribute>
+  <attribute name="maxNumberForOrSyntax" type="INTEGER">2147483647</attribute>
+  <attribute name="maxSourceSideCardinalityForSJ" type="STRING"/>
+  <attribute name="maximumContainerDepth" type="INTEGER">1</attribute>
+  <attribute name="minTargetToSourceRatioForSJ" type="STRING"/>
+  <attribute name="name" type="STRING">Oracle12c</attribute>
+  <attribute name="nativeDataLoadingEnabled" type="BOOLEAN">true</attribute>
+  <attribute name="password" type="PASSWORD_STRING">ENC(rH3d5jpIzCSELm9YyhzzQQ==$gwjShanY7X17sT7l4gb3HA==)</attribute>
+  <attribute name="persistPassword" type="BOOLEAN">true</attribute>
+  <attribute name="resourceModifiedDateOnSourceCISSite" type="LONG">1612040292508</attribute>
+  <attribute name="supportsDBLink" type="BOOLEAN">false</attribute>
+  <attribute name="supportsDataship" type="BOOLEAN">false</attribute>
+  <attribute name="supportsDatashipAsTarget" type="BOOLEAN">false</attribute>
+  <attribute name="supportsStarSchema" type="BOOLEAN">false</attribute>
+  <attribute name="ticketCache" type="STRING"/>
+  <attribute name="topicName" type="STRING"/>
+  <attribute name="txnIsolationLevel" type="STRING">Read Committed</attribute>
+  <attribute name="type" type="STRING">Oracle</attribute>
+  <attribute name="url" type="STRING">jdbc:oracle:thin:@172.23.7.234:1521:epps</attribute>
+  <attribute name="urlDatabaseName" type="STRING">epps</attribute>
+  <attribute name="urlIP" type="STRING">172.23.7.234</attribute>
+  <attribute name="urlPatternStr" type="STRING">jdbc:oracle:thin:@&lt;HOST&gt;:&lt;PORT&gt;:&lt;DATABASE_NAME&gt;</attribute>
+  <attribute name="urlPort" type="INTEGER">1521</attribute>
+  <attribute name="useLoginCertEncryption" type="BOOLEAN">false</attribute>
+</metadata>
